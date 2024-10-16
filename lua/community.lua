@@ -22,6 +22,7 @@ return {
   { import = "astrocommunity.colorscheme.catppuccin" },
   { import = "astrocommunity.colorscheme.tokyonight-nvim" },
   { import = "astrocommunity.completion.cmp-cmdline" },
+  { import = "astrocommunity.completion.supermaven-nvim" },
   { import = "astrocommunity.keybinding.nvcheatsheet-nvim" },
   { import = "astrocommunity.recipes.vscode" },
   { import = "astrocommunity.utility.noice-nvim" },

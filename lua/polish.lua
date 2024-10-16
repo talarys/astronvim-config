@@ -12,3 +12,9 @@ vim.api.nvim_set_keymap(
 
 -- Toggle compiler results
 vim.api.nvim_set_keymap("n", "<S-F7>", "<cmd>CompilerToggleResults<cr>", { noremap = true, silent = true })
+
+vim.filetype.add {
+  extension = {
+    postcss = "css",
+  },
+}

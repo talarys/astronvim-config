@@ -3,7 +3,7 @@ return {
     "CRAG666/code_runner.nvim",
     config = function()
       require("code_runner").setup {
-        mode = "float",
+        mode = "toggleterm",
         better_term = {
           clean = true,
         },
@@ -14,6 +14,8 @@ return {
           rust = "cargo run -q $end ",
           haskell = "cabal run $dir/.. -v0 $end",
           c = "make run $end",
+          typescript = "bun run start",
+          javascript = "bun run start",
         },
         vim.keymap.set("n", "<leader>r", ":RunCode<CR>", { noremap = true, silent = false }),
         vim.keymap.set("n", "<C-A-n>", ":RunCode<CR>", { noremap = true, silent = false }),
